@@ -1,0 +1,57 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: navy;
+    margin-left: 0px;
+}
+
+.rb-recipelist {
+   overflow: hidden;
+   overflow-y: scroll;
+/*   width:  400px;
+*/   height: 1000px ;
+}
+
+.rb-category {
+   font-weight: bold;
+}
+
+.rb-recipeinlist {
+   font-weight: normal;
+   margin-left: 30px;
+}
+
+.rb-recipe {
+   font-weight: normal;
+   height: 1000px ;
+}
+
+.rb-recipetitle {
+   min-height: 50px;
+   vertical-align: center;
+   background-color: gray;
+   color: white;
+   font-weight: bold;
+   font-size: +3;
+   padding: 20px;
+   text-align: center;
+}
+
+.rb-recipesubtitle-left {
+   float: left;
+}
+
+.rb-recipesubtitle-right {
+   float: right;
+}
+.rb-recipedetail {
+   min-height: 50px;
+   color: white;
+   background-color: gray;
+   padding: 20px;
+   font-size: +1;
+   white-space: pre-wrap;
+   text-align: left;
+}
