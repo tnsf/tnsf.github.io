@@ -21,7 +21,7 @@
 
 <div ng-app="RecipeBrowser" ng-controller="RecipeController">
    <section class="w3-quarter rb-recipelist">
-      <div class="rb-category" ng-repeat="cat in categories">
+      <div class="rb-category" ng-repeat="cat in recipes.categories">
          {{ cat[0].Category + ' (' + cat.length + ')' }}
          <div class="rb-recipeinlist" ng-repeat="e in cat" ng-click="selectRecipe(e)">
             {{ e.Recipe }}
@@ -30,20 +30,20 @@
       </div>
    </section>
    <section class="w3-rest rb-recipe">
-      <h1 class="w3-card-2 rb-recipetitle">{{ selectedRecipe["Recipe"] }}</h1>
+      <h1 class="w3-card-2 rb-recipetitle">{{ recipes.selectedRecipe["Recipe"] }}</h1>
 
       <table>
       <tr>
-      <td width="50%"><h4>Temperature: {{selectedRecipe["Cooking Temp"]}}</h4></td>
-      <td width="50%"><h4>Cooking Time: {{selectedRecipe["Cooking Duration"]}}</h4></td>
+      <td width="50%"><h4>Temperature: {{recipes.selectedRecipe["Cooking Temp"]}}</h4></td>
+      <td width="50%"><h4>Cooking Time: {{recipes.selectedRecipe["Cooking Duration"]}}</h4></td>
       </tr>
       </table>
 
       <div>
       <h2>Ingredients:</h2>
-      <div class="w3-card-2 rb-recipedetail">{{ selectedRecipe["Ingredients"] }}</div>
+      <div class="w3-card-2 rb-recipedetail">{{ recipes.selectedRecipe["Ingredients"] }}</div>
       <h2>Directions:</h2>
-      <div class="w3-card=2 rb-recipedetail">{{ selectedRecipe["Directions"] }}</div>
+      <div class="w3-card=2 rb-recipedetail">{{ recipes.selectedRecipe["Directions"] }}</div>
       </div>
    </section>
 </div>
